@@ -1,0 +1,31 @@
+.filters-main-container {
+	display: flex;
+	flex-direction: column;
+	row-gap: 20px;
+}
+.filters-container {
+	display: flex;
+	flex-direction: column;
+	row-gap: 15px;
+}
+.filter-item-container {
+	display: flex;
+	flex-direction: row;
+	column-gap: 15px;
+}
+.filters-list {
+	display: flex;
+	flex-direction: column;
+	row-gap: 12px;
+}
+.filter-title {
+	font-size: 20px;
+}
+.checkbox {
+	outline: none;
+	border: none;
+}
+.radio {
+	outline: none;
+	border: none;
+}

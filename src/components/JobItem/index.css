@@ -1,0 +1,58 @@
+* {
+	text-decoration: none;
+}
+.job-item-container {
+	padding: 15px;
+	background-color: #202020;
+	display: flex;
+	flex-direction: column;
+	row-gap: 25px;
+	border-radius: 10px;
+}
+.logo-and-title-and-rating-container {
+	display: flex;
+	flex-direction: row;
+	column-gap: 25px;
+}
+.job-item-logo {
+	height: 60px;
+}
+.jobs-title {
+	font-size: 20px;
+}
+.rating-container {
+	display: flex;
+	flex-direction: row;
+	column-gap: 15px;
+	align-items: center;
+}
+.star {
+	color: #fbbf24 !important;
+}
+.job-details {
+	display: flex;
+	flex-direction: row;
+}
+.location-and-type-container {
+	display: flex;
+	flex-direction: row;
+	column-gap: 15px;
+	width: 100%;
+}
+.details-container {
+	display: flex;
+	flex-direction: row;
+	column-gap: 10px;
+	align-items: center;
+	padding-left: 10px;
+}
+.type {
+	color: #cbd5e1;
+}
+.hr {
+	border-top: 1.5px solid #cbd5e1;
+}
+.description-heading {
+	font-size: 15px;
+	font-weight: 400;
+}
