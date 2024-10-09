@@ -108,7 +108,7 @@ class AllJobsDetails extends Component {
 	};
 
 	updateSearchInput = (e) => {
-		this.setState({ searchInput: e.target.value }, this.getJobs);
+		this.setState({ searchInput: e.target.value });
 	};
 
 	renderJobsInputContainer = () => (
@@ -118,10 +118,16 @@ class AllJobsDetails extends Component {
 				type="search"
 				placeholder="Search"
 				onChange={this.updateSearchInput}
+				onKeyDown={(e) => {
+					if (e.key === 'Enter') {
+						this.getJobs();
+					}
+				}}
 			/>
 			<button
 				className="jobs-input-search-button"
 				type="button"
+				onClick={this.getJobs}
 				// data-testid:"searchButton"
 			>
 				<FaSearch className="jobs-input-search-icon" />

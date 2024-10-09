@@ -1,0 +1,29 @@
+.similar-jobs-item-container {
+	background-color: #2c364c;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	row-gap: 10px;
+	border-radius: 10px;
+}
+.similar-job-company-logo {
+	width: 60px;
+}
+.logo-title-container {
+	display: flex;
+	flex-direction: row;
+	column-gap: 20px;
+}
+.similar-job-title {
+	font-size: 20px;
+}
+.star-container {
+	margin-top: 10px;
+	display: flex;
+	flex-direction: row;
+	column-gap: 10px;
+	align-items: center;
+}
+.similar-jobs-description-container {
+	font-size: 15px;
+}

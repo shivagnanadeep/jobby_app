@@ -4,6 +4,9 @@ import LoginForm from './components/LoginForm';
 import HomePage from './components/HomePage';
 import ProtectedRoute from './components/ProtectedRoute';
 import AllJobsDetails from './components/AllJobsDetails';
+import JobItemDetails from './components/JobItemDetails';
+import NotFound from './components/NotFound';
+import { Redirect } from 'react-router-dom';
 
 // These are the lists used in the application. You can move them to any component needed.
 
@@ -26,6 +29,17 @@ const App = () => (
 				exact
 				component={AllJobsDetails}
 			/>
+			<ProtectedRoute
+				path="/jobs/:id"
+				exact
+				component={JobItemDetails}
+			/>
+			<Route
+				path="/not-found"
+				exact
+				component={NotFound}
+			/>
+			<Redirect to="/not-found" />
 		</Switch>
 	</BrowserRouter>
 );
